@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Room Details</h2>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Roll Number</th>
+          <th>Department</th>
+          <th>Room Number</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let room of rooms">
+          <td>{{ room.student_name }}</td>
+          <td>{{ room.rollno }}</td>
+          <td>{{ room.department }}</td>
+          <td>{{ room.room_number }}</td>
+          <td>{{ room.year }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

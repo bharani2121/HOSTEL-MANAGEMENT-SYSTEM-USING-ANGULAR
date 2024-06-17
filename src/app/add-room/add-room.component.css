@@ -1,0 +1,70 @@
+.page3 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/c.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.container {
+  margin-top: 5rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.container:hover {
+  transform: scale(1.05); /* Enlarge the container on hover */
+}
+
+h2 {
+  color: #f8f9fa;
+}
+
+.form-label {
+  color: black;
+}
+
+.form-control {
+  color: black;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.form-control:hover {
+  transform: scale(1.05); /* Enlarge the input field on hover */
+}
+
+.btn-primary {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: #fff;
+}

@@ -1,0 +1,36 @@
+<div class="complaintt">
+<form (ngSubmit)="onSubmit()" #complaintForm="ngForm">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="complaint.name" name="name" required>
+  </div>
+  <div>
+    <label for="rollno">Roll No:</label>
+    <input type="text" id="rollno" [(ngModel)]="complaint.rollno" name="rollno" required>
+  </div>
+  <div>
+    <label for="roomno">Room No:</label>
+    <input type="text" id="roomno" [(ngModel)]="complaint.roomno" name="roomno" required>
+  </div>
+  <div>
+    <label for="mobileno">Mobile No:</label>
+    <input type="text" id="mobileno" [(ngModel)]="complaint.mobileno" name="mobileno" required>
+  </div>
+  <div>
+    <label for="gmail">Gmail:</label>
+    <input type="email" id="gmail" [(ngModel)]="complaint.gmail" name="gmail" required>
+  </div>
+  <div>
+    <label for="details">Complaint Details:</label>
+    <textarea id="details" [(ngModel)]="complaint.details" name="details" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</div>
+
+
+<!-- Display success message -->
+<div *ngIf="successMessage">
+  <p>{{ successMessage }}</p>
+</div>
+

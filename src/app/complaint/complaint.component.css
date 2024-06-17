@@ -1,0 +1,82 @@
+/* complaint.component.css */
+.complaintt {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assests/wallpaperflare.com_wallpaper\(38\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Form styling */
+form {
+  max-width: 350px; /* Set a maximum width for the form */
+  margin: 0 auto;
+  padding: 20px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add a thin border around the form */
+  border-radius: 6px; /* Rounded corners for the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition for transform, box-shadow, and border-color */
+}
+
+/* Increase depth and shadow on hover */
+form:hover {
+  transform: scale(1.05); /* Move form up slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  border-color: rgba(0, 123, 255, 0.5); /* Change border color on hover */
+}
+
+/* Form element styling */
+div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* General input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.1);
+  width: calc(100% - 20px); /* Adjust width to fit within border */
+  padding: 0.5rem;
+  border: 1px solid #ccc; /* Add border for inputs and textarea */
+  border-radius: 4px; /* Rounded corners for inputs */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+/* Increase depth and shadow on input/textarea hover */
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  transform: translateY(-3px); /* Move element up slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.3); /* Add shadow for depth */
+}
+
+/* Submit button styling */
+button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for button scaling and shadow */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Move button up slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}

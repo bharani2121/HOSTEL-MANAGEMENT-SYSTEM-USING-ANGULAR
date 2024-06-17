@@ -1,0 +1,36 @@
+<div>
+    <label for="roomNumber">Room Number:</label>
+    <input type="text" id="roomNumber" [(ngModel)]="roomNumber">
+    <button (click)="fetchRoomDetails()">Fetch Room Details</button>
+  </div>
+  
+  <div *ngIf="roomDetails">
+    <h2>Update Room Details</h2>
+    <form (ngSubmit)="updateRoom()">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" [(ngModel)]="roomDetails.student_name" name="studentName">
+      <br>
+      <label for="rollno">Roll Number:</label>
+      <input type="text" id="rollno" [(ngModel)]="roomDetails.rollno" name="rollno">
+      <br>
+      <label for="year">Year:</label>
+      <input type="text" id="year" [(ngModel)]="roomDetails.year" name="year">
+      <br>
+      <label for="department">Department:</label>
+      <input type="text" id="department" [(ngModel)]="roomDetails.department" name="department">
+      <br>
+      <label for="roomNumber">Room Number:</label>
+      <input type="text" id="roomNumber" [(ngModel)]="roomDetails.room_number" name="roomNumber">
+      <br>
+      <button type="submit">Update Room</button>
+    </form>
+  </div>
+  
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+  
+  <div *ngIf="updateSuccess">
+    <p>Room updated successfully!</p>
+  </div>
+  

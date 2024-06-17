@@ -1,0 +1,63 @@
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.container:hover table {
+  transform: scale(1.05); /* Slightly enlarge the table when the container is hovered */
+}
+
+.btn {
+  margin: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.page2 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adding table styling and hover effect */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+table th, table td {
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent borders */
+  padding: 8px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+  color: white;
+}
+
+table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly visible on row hover */
+}
+
+table:hover {
+  transform: scale(1.05); /* Slightly enlarge the table on hover */
+}

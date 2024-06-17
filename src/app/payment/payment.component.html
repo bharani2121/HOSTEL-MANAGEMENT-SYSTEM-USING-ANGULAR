@@ -1,0 +1,35 @@
+<div class="payment-form">
+  <h2>Payment Details</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="studentName">Student Name</label>
+      <input type="text" id="studentName" [(ngModel)]="paymentData.studentName" name="studentName" required>
+    </div>
+    <div>
+      <label for="studentId">Rollno</label>
+      <input type="text" id="studentId" [(ngModel)]="paymentData.studentId" name="studentId" required>
+    </div>
+    <div>
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" [(ngModel)]="paymentData.amount" name="amount" required>
+    </div>
+    <div>
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" [(ngModel)]="paymentData.cardNumber" name="cardNumber" required>
+    </div>
+    <div>
+      <label for="expiryDate">Expiry Date</label>
+      <input type="text" id="expiryDate" [(ngModel)]="paymentData.expiryDate" name="expiryDate" required>
+    </div>
+    <div>
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc" [(ngModel)]="paymentData.cvc" name="cvc" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Display success message -->
+  <div *ngIf="successMessage" class="success-message">
+    <p>{{ successMessage }}</p>
+  </div>
+</div>
